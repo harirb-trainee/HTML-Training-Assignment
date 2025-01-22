@@ -1,0 +1,109 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f8f8f8;
+}
+
+.container {
+    display: flex;
+    width: 70%; 
+    height: 85%;
+    background: #FAFAFA;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px; 
+}
+
+
+
+.image-container img {
+    object-fit: cover;
+    border-radius: 50%; 
+    width: 550px; 
+    height: 550px; 
+    background: transparent url('img/Ellipse 2.png') 0% 0% no-repeat padding-box;
+box-shadow: 0px 4px 31px #0000000A;
+border: 20px solid #FFFFFF;
+opacity: 1;
+}
+
+
+
+.logo h1 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #f73131;
+    margin: 0 0 10px;
+}
+
+.tagline {
+    text-align: left;
+    font: normal normal 300 40px/47px Roboto;
+    color: #3E3E3E;
+    opacity: 1;
+}
+
+.tagline .highlight {
+    text-align: left;
+    font: normal normal 900 40px/53px Roboto;
+    color: #C8242F;
+    opacity: 1;
+}
+
+.header {
+    margin-top: 0; 
+    margin-bottom: 1; 
+    text-align: left;
+    font: normal normal normal 25px/33px Roboto;
+    color: #3E3E3E;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    width: 100%;
+    margin-bottom: 15px;
+    background: #fff;
+    padding: 10px;
+}
+
+.login-form .btn {
+    width: 25%;
+    height: 45px;
+    background: #C8242F;
+    border-radius: 23px;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.login-form .btn:hover {
+    background: #C8242F; 
+    color: #fff; 
+    box-shadow: none; 
+}
+
+.links {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.links a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #007bff;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
