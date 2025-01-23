@@ -2,50 +2,177 @@
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-  }
-  .login-image {
+}
+
+.login-image {
     max-width: 100%;
-    border-radius:  50%;
-  }
-  .fp {
+    border-radius: 50%;
+}
+
+.fp {
     font-size: 0.9rem;
     color: #888;
     display: block;
     margin-top: 10px;
     text-align: right;
-  }
-  .ask {
+}
+
+.ask {
     top: 595px;
-left: 906px;
-width: 160px;
-height: 20px;
-text-align: left;
-font: normal normal normal 15px/20px Roboto;
-letter-spacing: 0px;
-color: #ADADAD;
-opacity: 1;
-  }
-  .span-login {
+    left: 906px;
+    width: 160px;
+    height: 20px;
+    text-align: left;
+    font: normal normal normal 15px/20px Roboto;
+    letter-spacing: 0px;
+    color: #ADADAD !important;
+    opacity: 1;
+}
+
+
+.span-login {
     font-weight: bold;
     color: #d9534f;
-  }
-  .button-radius {
+}
+
+.button-radius {
     border-radius: 20px;
     width: 138px;
-  }
-  .adj{
-    width: 308px;
-  }
-  
-  .login{
-    width:120px
-  }
+}
 
- .header{
+.adj {
+    width: 308px;
+}
+
+.login {
+    width: 120px
+}
+
+.header {
+
+    text-align: left;
+    font: normal normal 900 40px/53px Roboto;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1
+}
+
+.search-icon {
+    width: 30px;
+}
+
+.menubar {
+    width: 1%;
+}
+
+.menubar-top-left {
+    padding: 23px;
+}
+
+.profile-item {
+    display: flex;
+    align-items: center;
+}
+
+.profile-item svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.profile-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    /* Adds space between the profile image and name */
+}
+
+.profile-item img {
+    width: 40px;
+    /* Controls the size of the profile image */
+    height: 40px;
+    border-radius: 50%;
+    /* Makes the image round */
+}
+
+.profile-item span {
+    font-size: 16px;
+    font-weight: bold;
+    font-weight: 600;
+}
+
+/* Spacing between Navbar items */
+.navbar-nav .nav-item {
+    margin-bottom: 20px;
+    margin-right: 20px;
+    /* Adds space between navbar items */
+}
+
+/* Adjustments for Navbar Links */
+.nav-link {
+    padding: 8px 15px;
+    /* Increase padding around navbar links for better spacing */
+}
+
+/* Align the navbar items horizontally and add spacing */
+.navbar-nav {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.menubar img {
+    cursor: pointer;
+    /* Make the menu icon clickable */
+}
+
+.active span {
+    top: 115px;
+    left: 75px;
+    width: 78px;
+    height: 21px;
+    /* UI Properties */
+    text-align: left;
+    font: normal normal normal 16px/21px Roboto;
+    letter-spacing: 0px;
+    color: #C8242F;
+    opacity: 1;
+}
+
+
+.search-icon {
+    width: 30px;
+}
+
+.numericals {
+    top: 213px;
+    left: 383px;
+    width: 77px;
+    height: 33px;
+
+    text-align: left;
+    font: normal normal medium 25px/33px Roboto;
+    letter-spacing: 0px;
+    color: #3E3E3E;
+    opacity: 1;
+}
+.accepted{
+    margin-right: 20% !important;
+    width: 2%;    /* Set the height of the box */ 
+    background-color: #3498db !important; /* Set the background color (e.g., a shade of blue) */ 
+    border: 2px solid #2980b9 !important; /* Optional: add a border */ 
+    padding: 10%;
+
+}
+.notaccepted{
+    background-color: #db6971;
+
+}
+.f-size-timeperiod{
+    font-size: 80%;
+    width: 3% !important;
     
-text-align: left;
-font: normal normal 900 40px/53px Roboto;
-letter-spacing: 0px;
-color: #000000;
-opacity: 1
-  }
+}
+.underline{
+    text-underline-offset: 80% !important;
+}
