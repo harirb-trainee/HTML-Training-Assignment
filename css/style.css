@@ -49,81 +49,11 @@
 }
 
 .header {
-
     text-align: left;
     font: normal normal 900 40px/53px Roboto;
     letter-spacing: 0px;
     color: #000000;
     opacity: 1
-}
-
-.search-icon {
-    width: 30px;
-}
-
-.menubar {
-    width: 1%;
-}
-
-.menubar-top-left {
-    padding: 23px;
-}
-
-.profile-item {
-    display: flex;
-    align-items: center;
-}
-
-.profile-item svg {
-    width: 30px;
-    height: 30px;
-    margin-right: 8px;
-}
-
-.profile-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    /* Adds space between the profile image and name */
-}
-
-.profile-item img {
-    width: 40px;
-    /* Controls the size of the profile image */
-    height: 40px;
-    border-radius: 50%;
-    /* Makes the image round */
-}
-
-.profile-item span {
-    font-size: 16px;
-    font-weight: bold;
-    font-weight: 600;
-}
-
-/* Spacing between Navbar items */
-.navbar-nav .nav-item {
-    margin-bottom: 20px;
-    margin-right: 20px;
-    /* Adds space between navbar items */
-}
-
-/* Adjustments for Navbar Links */
-.nav-link {
-    padding: 8px 15px;
-    /* Increase padding around navbar links for better spacing */
-}
-
-/* Align the navbar items horizontally and add spacing */
-.navbar-nav {
-    display: flex;
-    justify-content: left;
-    align-items: center;
-}
-
-.menubar img {
-    cursor: pointer;
-    /* Make the menu icon clickable */
 }
 
 .active span {
@@ -138,35 +68,16 @@
     color: #C8242F;
     opacity: 1;
 }
-
-
-.search-icon {
-    width: 30px;
-}
-
 .numericals {
     top: 213px;
     left: 383px;
     width: 77px;
     height: 33px;
-
     text-align: left;
     font: normal normal medium 25px/33px Roboto;
     letter-spacing: 0px;
     color: #3E3E3E;
     opacity: 1;
-}
-.accepted{
-    margin-right: 20% !important;
-    width: 2%;    /* Set the height of the box */ 
-    background-color: #3498db !important; /* Set the background color (e.g., a shade of blue) */ 
-    border: 2px solid #2980b9 !important; /* Optional: add a border */ 
-    padding: 10%;
-
-}
-.notaccepted{
-    background-color: #db6971;
-
 }
 .f-size-timeperiod{
     font-size: 80%;
@@ -176,3 +87,90 @@
 .underline{
     text-underline-offset: 80% !important;
 }
+
+.filler{
+    color: #ADADAD;
+}
+.icons{
+    width: 40px;
+    height: 40px;
+}
+.nav-abutton{
+    background-color: rgba(255, 243, 244, 1);
+    border:000000;
+}
+.nav-nbutton{
+    background-color: rgba(255, 255, 255, 1);
+    border:000000;
+}
+.snackbar {
+    visibility: hidden;
+    min-width: 250px;
+    margin-left: -125px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    bottom: 30px;
+    font-size: 17px;
+  }
+  
+  .snackbar.show {
+    visibility: visible;
+    -webkit-animation: fadein 0.5s, fadeout 0.5s 2.5s;
+    animation: fadein 0.5s, fadeout 0.5s 2.5s;
+  }
+  
+  @-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 0;} 
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @keyframes fadein {
+    from {bottom: 0; opacity: 0;}
+    to {bottom: 30px; opacity: 1;}
+  }
+  
+  @-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;} 
+    to {bottom: 0; opacity: 0;}
+  }
+  
+  @keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 0;}
+  }
+
+.floting-label {
+    color: #999 !important;
+    position: absolute !important;
+    pointer-events: none !important;
+    left: 20px !important;
+    top: 10px !important;
+    transition: 0.2s !important;
+}
+
+.floting-field>input,
+.floting-field>.form-select{
+    height: 50px;
+}
+
+.floting-field>input:focus ~ .floting-label,
+.floting-field>textarea:focus ~ .floting-label,
+.floting-field>.form-control-readonly ~ .floting-label{
+    top: -10px !important;
+    left: 15px !important;
+    background-color: #fff;
+    font-size: small;
+    padding: 0 5px 0 5px;
+} 
+
+.nav-tabs .nav-link.active {
+    color: #C8242F;
+    text-decoration: underline;
+    text-underline-offset: 15px;
+    }

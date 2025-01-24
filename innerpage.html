@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/8.2.0/mdb.min.css" rel="stylesheet" />
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mdb.min.css.map" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
+
+</head>
+
+<body>
+    <div class="container-fluid min-vh-100">
+        <div class="row">
+            <!-- Horizontal Navbar -->
+            <nav class="navbar navbar-expand-lg navbar-light bg-light  d-flex">
+                <div class="container-fluid">
+
+                    <!-- Logo -->
+                    <button class="nav-nbutton pe-4">
+                        <span class="menubar-top-left"><img src="images/menu-bar.svg"></span>
+                    </button>
+                    <a class="navbar-brand " href="#">
+                        <img src="images/header-logo.svg" alt="Logo" class="d-inline-block align-text-top">
+                    </a>
+                    <img src="./images/search-icon.svg " width="30px" alt="Logo">
+                    <div class="col-auto menubar-top-left">
+
+                        <input type="text" readonly class="form-control-plaintext" value="Search">
+                    </div>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item p-3">
+                            <img src="images/notification-icon.svg" alt="Notification Icon">
+                        </li>
+
+                        <!-- Profile Section -->
+                        <li class="nav-item">
+                            <div class="pt-2">
+                                <img src="images/profile.png" alt="Profile Image" width="40px" height="40px">
+                                <span>John Doe <img src="images/downward-arrow.svg"></span>
+
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+        <div class="row">
+            <!-- Vertical Navbar -->
+            <div class="col-2">
+
+                <div class="navbar">
+
+                    <ul class=" navbar-nav w-100 gap-2 pe-4 me-4">
+                        <li class="nav-item menubar">
+                            <button class="border-0 w-100 p-1 nav-abutton">
+                                <div class="profile-item d-flex justify-content-start align-items-center">
+                                    <img src="images/dashboard-active.svg" alt="Dashboard Icon" height="25px"
+                                        width="25px">
+                                    <span>Dashboard</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="nav-item menubar">
+                            <button class="border-0 w-100 p-1 nav-nbutton">
+                                <div class="profile-item d-flex justify-content-start align-items-center">
+                                    <img src="images/graph-default.svg" alt="Analysis Icon" height="25px" width="25px">
+                                    <span>Analysis</span>
+                                </div>
+                            </button>
+                        </li>
+                        <li class="nav-item menubar">
+                            <button class="border-0 w-100 p-1 nav-nbutton">
+                                <div class="profile-item d-flex justify-content-start align-items-center">
+                                    <img src="images/inbox-default.svg" alt="Inbox Icon" height="25px" width="25px">
+                                    <span>Inbox</span>
+                                </div>
+                            </button>
+
+                        </li>
+                        <li class="nav-item menubar">
+                            <button class="border-0 w-100 p-1 nav-nbutton">
+                                <div class="profile-item d-flex justify-content-start align-items-center">
+                                    <img src="images/clock-default.svg" alt="History Icon" height="25px" width="25px">
+                                    <span>History</span>
+                                </div>
+                            </button>
+
+                        </li>
+                        <li class="nav-item menubar">
+                            <button class="border-0 w-100 p-1 nav-nbutton">
+                                <div class="profile-item d-flex justify-content-start align-items-center">
+                                    <img src="images/user-default.svg" alt="Users Icon" height="25px" width="25px">
+                                    <span>Users</span>
+                                </div>
+                            </button>
+
+                        </li>
+                        <li class="nav-item menubar">
+                            <button class="border-0 w-100 p-1 nav-nbutton">
+                                <div class="d-flex justify-content-start align-items-center">
+                                    <img src="images/maintenance-default.svg" alt="Maintenance Icon" height="25px"
+                                        width="25px">
+                                    <span>Maintenance</span>
+                                </div>
+                            </button>
+
+                        </li>
+                        <li class="nav-item menubar">
+                            <button class="border-0 w-100 p-1 nav-nbutton ">
+                                <div class="profile-item d-flex justify-content-start align-items-center">
+                                    <img src="images/setting-default.svg" alt="Setting Icon" height="25px" width="25px">
+                                    <span>Setting</span>
+                                </div>
+                            </button>
+
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col">
+                <div class="row">
+                    <h4>Analysis</h4>
+                </div>
+                <div class="row mt-3 ps-4">
+                    <h5>One Column</h5>
+                    <div>
+                        <form>
+                            <div class="form-group col-md-10">
+
+                                <input type="email" class="form-control form-floating mb-2" placeholder="Name">
+                                <select
+                                    class=" custom-select-lg mb-2 mt-2 col-md-10 rounded border border-l FORM=form-floating"
+                                    style="height: 50px; width: 100%; ">
+
+                                    <option value="1">Dropdown</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                                <textarea class="form-control mt-2" style="height: 100px" placeholder="Multiple line">
+                                </textarea>
+                                <h5 class="mt-5">Two Column</h5>
+                                <div class="row mt-3">
+                                    <div class="col floting-field">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="">
+                                        <label for="floatingInput" class="floting-label">Email address</label>
+                                    </div>
+                                    <div class="col floting-field">
+                                        <input type="email" class="form-control" id="floatingInput" placeholder="">
+                                        <label for="floatingInput" class="floting-label">Username</label>
+                                    </div>
+                                </div>
+                                <div class="row mt-4">
+                                    <div class="col floting-field">
+                                        <input type="password" class="form-control" id="floatingInput" placeholder="">
+                                        <label for="floatingInput" class="floting-label">Password</label>
+                                    </div>
+                                    <div class="col floting-field">
+                                        <select
+                                            class=" custom-select-lg   col-md-10 rounded border border-l form-floating"
+                                            style="height: 58px; width: 100%; ">
+
+                                            <option value="1">Dropdown</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h5 class="mt-5">Three Column</h5>
+                                <div class="row mt-4">
+                                    <div class="col">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                    <div class="col">
+                                        <input type="password" class="form-control" placeholder="password">
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control" value="hi" disabled
+                                            placeholder="Username">
+                                    </div>
+                                </div>
+                                <h5 class="mt-5">Four Column</h5>
+                                <div class="row mt-3">
+                                    <div class="col">
+                                        <!-- <label for="validationServer04">Focus</label> -->
+                                        <input type="text" class="form-control is-invalid " required>
+                                        <div class="invalid-feedback">
+                                            Enter Valid Data.
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <input type="text" class="form-control is-invalid border-light-subtle" required>
+                                        <div class=" invalid-feedback filler">
+                                            Enter your full name as pr ID
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="col">
+                                            <input type="text" class="form-control  border-light-subtle" required>
+
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <select
+                                            class=" custom-select-lg  col-md-10 rounded border border-l FORM=form-floating"
+                                            style="height: 40px; width: 100%; ">
+
+                                            <option value="1">Select</option>
+                                            <option value="2">Two</option>
+                                            <option value="3">Three</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <h5 class="mt-5">Other Design elements</h5>
+                                <h5 class="mt-3 mb-2">File Upload</h5>
+
+                                <button onclick="openFileDialog()" class="rounded-pill bg-white border-danger">
+                                    <input type="file" id="fileInput" style="display: none;">
+                                    <img src="/images/cloud-upload-icon.svg" width="25px" class="rounded">
+                                    <span class="text-danger ">Upload</span>
+
+                                </button>
+                                <span class="ms-1 filler fs-6" id="fileName">No item selected</span>
+
+                                <h5 class="mt-4">Radio Button</h5>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio1">opttion1</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="custom-control custom-radio">
+                                            <input type="radio" name="customRadio" class="custom-control-input">
+                                            <label class="custom-control-label" for="customRadio1">option2</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <h5 class="mt-4">Checkbox</h5>
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheck1">option 1</label>
+                                        </div>
+                                    </div>
+                                    <div class="col">
+                                        <div class="custom-control custom-checkbox">
+                                            <input type="checkbox" class="custom-control-input">
+                                            <label class="custom-control-label" for="customCheck1">option 2</label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <h5 class="mt-2">Snackbar</h5>
+                                <button onclick="myFunction()">Show Snackbar</button>
+
+                                <div id="snackbar">Some text some message..</div>
+
+
+                                <h5 class="mt-2">Call to action</h5>
+                                <div>
+                                    <button type="button" class="btn btn-danger rounded-pill fw-bold "> <span
+                                            class="m-3">Primary</span></button>
+
+
+                                    <button type="button"
+                                        class=" bg-white border-danger rounded-pill fw-bold text-danger ms-4 mb-3 p-1 w-2 h-5 "><span
+                                            class="align-content-center m-3">Secondary</span></button>
+                                </div>
+                                <h5 class="mt-2">Tabs</h5>
+                                <nav>
+                                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
+                                      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                                    </div>
+                                  </nav>
+                                  <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
+                                  </div>
+                            </div>
+
+
+
+
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    </div>
+    </div>
+    </div>
+    </div>
+    <script>
+        function openFileDialog() {
+
+
+            var inputfile = document.getElementById('fileInput');
+            inputfile.click();
+            var fileName1 = document.getElementById('fileName')
+            inputfile.addEventListener("change", function (e) {
+                var fileName = e.target.files[0].name;
+                console.log(fileName);
+                fileName1.textContent=fileName;
+            });
+        }
+    </script>
+
+</body>
+
+</html>
