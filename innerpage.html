@@ -22,41 +22,142 @@
                 <div class="container-fluid">
 
                     <!-- Logo -->
-                    <button class="nav-nbutton pe-4">
+                    <button class="nav-nbutton pe-4 d-lg-none d-block" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">
                         <span class="menubar-top-left"><img src="images/menu-bar.svg"></span>
                     </button>
-                    <a class="navbar-brand " href="#">
+                    <button class="nav-nbutton pe-4 d-lg-block d-none">
+                        <span class="menubar-top-left"><img src="images/menu-bar.svg"></span>
+                    </button>
+                    <a class="navbar-brand  d-sm-block d-md-block d-lg-none" href="#">
+                        <img src="images/favicon.ico" width="35px" height="35px" alt="Logo" class="d-inline-block align-text-top">
+                    </a>
+                    <a class="navbar-brand  d-none d-sm-none d-md-none d-lg-block " href="#">
                         <img src="images/header-logo.svg" alt="Logo" class="d-inline-block align-text-top">
                     </a>
-                    <img src="./images/search-icon.svg " width="30px" alt="Logo">
-                    <div class="col-auto menubar-top-left">
+                    <img src="./images/search-icon.svg" width="30px" alt="Logo" class=" d-block d-sm-block">
+                    <div class="col-auto  menubar-top-left">
 
-                        <input type="text" readonly class="form-control-plaintext" value="Search">
+                        <input type="text"  class="d-none d-sm-block border-0 bg-white" ><span>  </span>
+                       
                     </div>
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item p-3">
+                        <li class="nav-item p-3 d-none d-lg-block">
                             <img src="images/notification-icon.svg" alt="Notification Icon">
                         </li>
 
-                        <!-- Profile Section -->
-                        <li class="nav-item">
-                            <div class="pt-2">
-                                <img src="images/profile.png" alt="Profile Image" width="40px" height="40px">
-                                <span>John Doe <img src="images/downward-arrow.svg"></span>
-
-                            </div>
-                        </li>
                     </ul>
+
+
+                        <!-- Profile Section -->
+                        <div class="pt-2 d-flex">
+                            <img src="images/profile.png" alt="Profile Image" width="40px" height="40px">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle bg-white text-secondary border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    John Doe
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
                 </div>
             </nav>
         </div>
         <div class="row">
             <!-- Vertical Navbar -->
-            <div class="col-2">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="col-2">
 
+                        <div class="navbar">
+
+                            <ul class="navbar-nav w-100 gap-2 pe-4 me-4">
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-abutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/dashboard-active.svg" alt="Dashboard Icon" height="25px"
+                                                width="25px">
+                                            <span>Dashboard</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/graph-default.svg" alt="Analysis Icon" height="25px"
+                                                width="25px">
+                                            <span>Analysis</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/inbox-default.svg" alt="Inbox Icon" height="25px"
+                                                width="25px">
+                                            <span>Inbox</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/clock-default.svg" alt="History Icon" height="25px"
+                                                width="25px">
+                                            <span>History</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/user-default.svg" alt="Users Icon" height="25px"
+                                                width="25px">
+                                            <span>Users</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img src="images/maintenance-default.svg" alt="Maintenance Icon"
+                                                height="25px" width="25px">
+                                            <span>Maintenance</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton ">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/setting-default.svg" alt="Setting Icon" height="25px"
+                                                width="25px">
+                                            <span>Setting</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 d-lg-block d-none">
                 <div class="navbar">
 
-                    <ul class=" navbar-nav w-100 gap-2 pe-4 me-4">
+                    <ul class="navbar-nav w-100 gap-2 pe-4 me-4">
                         <li class="nav-item menubar">
                             <button class="border-0 w-100 p-1 nav-abutton">
                                 <div class="profile-item d-flex justify-content-start align-items-center">
@@ -148,17 +249,17 @@
                                 <div class="row mt-3">
                                     <div class="col floting-field">
                                         <input type="email" class="form-control" id="floatingInput" placeholder="">
-                                        <label for="floatingInput" class="floting-label">Email address</label>
+                                        <label for="floatingInput" class="floting-label"></label>
                                     </div>
                                     <div class="col floting-field">
                                         <input type="email" class="form-control" id="floatingInput" placeholder="">
-                                        <label for="floatingInput" class="floting-label">Username</label>
+                                        <label for="floatingInput" class="floting-label"></label>
                                     </div>
                                 </div>
                                 <div class="row mt-4">
                                     <div class="col floting-field">
                                         <input type="password" class="form-control" id="floatingInput" placeholder="">
-                                        <label for="floatingInput" class="floting-label">Password</label>
+                                        <label for="floatingInput" class="floting-label"></label>
                                     </div>
                                     <div class="col floting-field">
                                         <select
@@ -260,9 +361,20 @@
 
                                 </div>
                                 <h5 class="mt-2">Snackbar</h5>
-                                <button onclick="myFunction()">Show Snackbar</button>
+                               <div >
+                                <div class="row">
+                                    <div class="col-md-6 border border-danger h-100 me-3 mb-3" ><span class="text-danger"> <img src="images/error-icon.svg" width="5%">This is an error message</span></div>
+                                    <div class="col-md border border-primary me-3 mb-3" ><span class="text-primary"><img src="images/info-icon.svg" width="5%">This is an informative message</span></div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 border border-warning h-100 me-3 mb-3" > <span class="text-warning"><img src="images/warning-icon.svg" width="5%"> This is a warning message</span></div>
+                                    <div class="col-md   border border-success me-3 mb-3" ><span class="text-success"><img src="images/success-icon.svg" width="5%">This      is a sucess message</span></div>
+                                </div>
 
-                                <div id="snackbar">Some text some message..</div>
+                               </div>
+                            
+
+                               
 
 
                                 <h5 class="mt-2">Call to action</h5>
@@ -278,16 +390,43 @@
                                 <h5 class="mt-2">Tabs</h5>
                                 <nav>
                                     <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                      <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
-                                      <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Profile</button>
-                                      <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</button>
+                                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home"
+                                            aria-selected="true">Home</button>
+                                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-profile" type="button" role="tab"
+                                            aria-controls="nav-profile" aria-selected="false">Profile</button>
+                                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab"
+                                            data-bs-target="#nav-contact" type="button" role="tab"
+                                            aria-controls="nav-contact" aria-selected="false">Contact</button>
                                     </div>
-                                  </nav>
-                                  <div class="tab-content" id="nav-tabContent">
-                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
-                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
-                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing</div>
-                                  </div>
+                                </nav>
+                                <div class="tab-content" id="nav-tabContent">
+                                    <div class="tab-pane fade show active" id="nav-home" role="tabpanel"
+                                        aria-labelledby="nav-home-tab">Lorem Ipsum is simply dummy text of the printing
+                                        and typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                                        text ever since the 1500s, when an unknown printer took a galley of type and
+                                        scrambled it to make a type specimen book. It has survived not only five
+                                        centuries, but also the leap into electronic typesetting, remaining essentially
+                                        unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                        containing</div>
+                                    <div class="tab-pane fade" id="nav-profile" role="tabpanel"
+                                        aria-labelledby="nav-profile-tab">Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                        dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                        and scrambled it to make a type specimen book. It has survived not only five
+                                        centuries, but also the leap into electronic typesetting, remaining essentially
+                                        unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                        containing</div>
+                                    <div class="tab-pane fade" id="nav-contact" role="tabpanel"
+                                        aria-labelledby="nav-contact-tab">Lorem Ipsum is simply dummy text of the
+                                        printing and typesetting industry. Lorem Ipsum has been the industry's standard
+                                        dummy text ever since the 1500s, when an unknown printer took a galley of type
+                                        and scrambled it to make a type specimen book. It has survived not only five
+                                        centuries, but also the leap into electronic typesetting, remaining essentially
+                                        unchanged. It was popularised in the 1960s with the release of Letraset sheets
+                                        containing</div>
+                                </div>
                             </div>
 
 
@@ -317,7 +456,7 @@
             inputfile.addEventListener("change", function (e) {
                 var fileName = e.target.files[0].name;
                 console.log(fileName);
-                fileName1.textContent=fileName;
+                fileName1.textContent = fileName;
             });
         }
     </script>

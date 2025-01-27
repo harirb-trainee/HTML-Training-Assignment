@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/style.css">
+    <script src="js/bootstrap.bundle.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
 </head>
@@ -20,38 +21,139 @@
                 <div class="container-fluid">
 
                     <!-- Logo -->
-                    <button class="nav-nbutton pe-4">
+                    <button class="nav-nbutton pe-4 d-lg-none d-block" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop"
+                        aria-controls="offcanvasTop">
                         <span class="menubar-top-left"><img src="images/menu-bar.svg"></span>
                     </button>
-                    <a class="navbar-brand " href="#">
+                    <button class="nav-nbutton pe-4 d-lg-block d-none">
+                        <span class="menubar-top-left"><img src="images/menu-bar.svg"></span>
+                    </button>
+                    <a class="navbar-brand  d-sm-block d-md-block d-lg-none" href="#">
+                        <img src="images/favicon.ico" width="35px" height="35px" alt="Logo" class="d-inline-block align-text-top">
+                    </a>
+                    <a class="navbar-brand  d-none d-sm-none d-md-none d-lg-block " href="#">
                         <img src="images/header-logo.svg" alt="Logo" class="d-inline-block align-text-top">
                     </a>
-                    <img src="./images/search-icon.svg"  width="30px" alt="Logo">
-                    <div class="col-auto 
-                menubar-top-left">
+                    <img src="./images/search-icon.svg" width="30px" alt="Logo" class=" d-block d-sm-block">
+                    <div class="col-auto  menubar-top-left">
 
-                        <input type="text" readonly class="form-control-plaintext" value="Search">
+                        <input type="text"  class="d-none d-sm-block border-0 bg-white" ><span>  </span>
                     </div>
                     <ul class="navbar-nav ms-auto">
-                        <li class="nav-item p-3">
+                        <li class="nav-item p-3 d-none d-lg-block">
                             <img src="images/notification-icon.svg" alt="Notification Icon">
                         </li>
+                       
+                    </ul>
+                      
 
                         <!-- Profile Section -->
-                        <li class="nav-item">
-                            <div class="pt-2">
-                                <img src="images/profile.png" alt="Profile Image"  width="40px" height="40px">
-                                <span>John Doe <img src="images/downward-arrow.svg"></span>
-
+                        <div class="pt-2 d-flex">
+                            <img src="images/profile.png" alt="Profile Image" width="40px" height="40px">
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle bg-white text-secondary border-0" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    John Doe
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
                             </div>
-                        </li>
-                    </ul>
+                            
+                        </div>
+                        
                 </div>
             </nav>
         </div>
         <div class="row">
             <!-- Vertical Navbar -->
-            <div class="col-2">
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+                <div class="offcanvas-header">
+                    <h5 id="offcanvasTopLabel">Offcanvas top</h5>
+                    <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div class="col-2">
+
+                        <div class="navbar">
+
+                            <ul class="navbar-nav w-100 gap-2 pe-4 me-4">
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-abutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/dashboard-active.svg" alt="Dashboard Icon" height="25px"
+                                                width="25px">
+                                            <span>Dashboard</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/graph-default.svg" alt="Analysis Icon" height="25px"
+                                                width="25px">
+                                            <span>Analysis</span>
+                                        </div>
+                                    </button>
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/inbox-default.svg" alt="Inbox Icon" height="25px"
+                                                width="25px">
+                                            <span>Inbox</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/clock-default.svg" alt="History Icon" height="25px"
+                                                width="25px">
+                                            <span>History</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/user-default.svg" alt="Users Icon" height="25px"
+                                                width="25px">
+                                            <span>Users</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton">
+                                        <div class="d-flex justify-content-start align-items-center">
+                                            <img src="images/maintenance-default.svg" alt="Maintenance Icon"
+                                                height="25px" width="25px">
+                                            <span>Maintenance</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                                <li class="nav-item menubar">
+                                    <button class="border-0 w-100 p-1 nav-nbutton ">
+                                        <div class="profile-item d-flex justify-content-start align-items-center">
+                                            <img src="images/setting-default.svg" alt="Setting Icon" height="25px"
+                                                width="25px">
+                                            <span>Setting</span>
+                                        </div>
+                                    </button>
+
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-2 d-lg-block d-none">
 
                 <div class="navbar">
 
@@ -59,7 +161,8 @@
                         <li class="nav-item menubar">
                             <button class="border-0 w-100 p-1 nav-abutton">
                                 <div class="profile-item d-flex justify-content-start align-items-center">
-                                    <img src="images/dashboard-active.svg" alt="Dashboard Icon" height="25px" width="25px">
+                                    <img src="images/dashboard-active.svg" alt="Dashboard Icon" height="25px"
+                                        width="25px">
                                     <span>Dashboard</span>
                                 </div>
                             </button>
@@ -67,55 +170,61 @@
                         <li class="nav-item menubar">
                             <button class="border-0 w-100 p-1 nav-nbutton">
                                 <div class="profile-item d-flex justify-content-start align-items-center">
-                                    <img src="images/graph-default.svg" alt="Analysis Icon" height="25px" width="25px">
+                                    <img src="images/graph-default.svg" alt="Analysis Icon" height="25px"
+                                        width="25px">
                                     <span>Analysis</span>
                                 </div>
-                            </button>  
+                            </button>
                         </li>
                         <li class="nav-item menubar">
                             <button class="border-0 w-100 p-1 nav-nbutton">
                                 <div class="profile-item d-flex justify-content-start align-items-center">
-                                    <img src="images/inbox-default.svg" alt="Inbox Icon" height="25px" width="25px">
+                                    <img src="images/inbox-default.svg" alt="Inbox Icon" height="25px"
+                                        width="25px">
                                     <span>Inbox</span>
                                 </div>
                             </button>
-                            
+
                         </li>
                         <li class="nav-item menubar">
                             <button class="border-0 w-100 p-1 nav-nbutton">
                                 <div class="profile-item d-flex justify-content-start align-items-center">
-                                    <img src="images/clock-default.svg" alt="History Icon" height="25px" width="25px">
+                                    <img src="images/clock-default.svg" alt="History Icon" height="25px"
+                                        width="25px">
                                     <span>History</span>
                                 </div>
                             </button>
-                            
+
                         </li>
                         <li class="nav-item menubar">
                             <button class="border-0 w-100 p-1 nav-nbutton">
                                 <div class="profile-item d-flex justify-content-start align-items-center">
-                                    <img src="images/user-default.svg" alt="Users Icon" height="25px" width="25px">
+                                    <img src="images/user-default.svg" alt="Users Icon" height="25px"
+                                        width="25px">
                                     <span>Users</span>
                                 </div>
                             </button>
-                            
+
                         </li>
                         <li class="nav-item menubar">
                             <button class="border-0 w-100 p-1 nav-nbutton">
                                 <div class="d-flex justify-content-start align-items-center">
-                                    <img src="images/maintenance-default.svg" alt="Maintenance Icon" height="25px" width="25px">
+                                    <img src="images/maintenance-default.svg" alt="Maintenance Icon"
+                                        height="25px" width="25px">
                                     <span>Maintenance</span>
                                 </div>
                             </button>
-                           
+
                         </li>
                         <li class="nav-item menubar">
                             <button class="border-0 w-100 p-1 nav-nbutton ">
                                 <div class="profile-item d-flex justify-content-start align-items-center">
-                                    <img src="images/setting-default.svg" alt="Setting Icon" height="25px" width="25px">
+                                    <img src="images/setting-default.svg" alt="Setting Icon" height="25px"
+                                        width="25px">
                                     <span>Setting</span>
                                 </div>
                             </button>
-                           
+
                         </li>
                     </ul>
                 </div>
@@ -127,10 +236,10 @@
 
                 </div>
                 <div class="row">
-                    <div class="col shadow">
+                    <div class="col-lg-2 col-md-5">
                         <div class="row">
                             <div class="col d-flex justify-content-end">
-                                <img src="images/star.svg" class="w-50">
+                                <img src="images/star.svg" height="70px" width="50px">
                             </div>
                             <div class="col">
                                 <span class="fw-bold fs-4 p-2">23,456</span>
@@ -139,10 +248,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-2 col-sm-5">
                         <div class="row">
                             <div class="col d-flex justify-content-end">
-                                <img src="images/new-product.svg" class="w-50">
+                                <img src="images/new-product.svg"  height="70px" width="50px">
                             </div>
                             <div class="col">
                                 <span class="fw-bold fs-4 p-2">23,456</span>
@@ -150,10 +259,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-2 col-sm-5">
                         <div class="row">
                             <div class="col d-flex justify-content-end">
-                                <img src="images/total-product.svg" class="w-50">
+                                <img src="images/total-product.svg"  height="70px" width="50px">
                             </div>
                             <div class="col">
                                 <span class="fw-bold fs-4 p-2">23,456</span><br>
@@ -161,10 +270,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-2 col-sm-5">
                         <div class="row">
                             <div class="col d-flex justify-content-end">
-                                <img src="images/dollar-filled.svg" class="w-50">
+                                <img src="images/dollar-filled.svg" height="70px" width="50px">
                             </div>
                             <div class="col">
                                 <span class="fw-bold fs-4 p-2">23,456</span>
@@ -172,10 +281,10 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col">
+                    <div class="col-lg-2 col-sm-5">
                         <div class="row">
                             <div class="col d-flex justify-content-end">
-                                <img src="images/money-bag.svg" class="w-50">
+                                <img src="images/money-bag.svg" height="70px" width="50px">
                             </div>
                             <div class="col">
                                 <span class="fw-bold fs-4 p-2">23,456</span>
@@ -184,7 +293,6 @@
                             </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- Graphs-->
                 <div>
@@ -227,7 +335,8 @@
                                 <div class="row">
                                     <div class="row d-flex justify-content-center">
                                         <div class="col-8">
-                                            <img src="images/radio-checked-icon.svg" class="icons"><span>United States
+                                            <img src="images/radio-checked-icon.svg" class="icons"><span>United
+                                                States
                                                 of America</span>
                                         </div>
                                         <div class="col">
@@ -261,8 +370,8 @@
                     <div class="col d-flex justify-content-end   p-4 text-danger fw-bold ">
                         View All
                     </div>
-                    <div class="d-flex mt-3">
-                        <table class="table">
+                    <div class="d-flex mt-3 table-responsive">
+                        <table class="table ">
                             <thead>
                                 <tr>
                                     <th scope="col" class="ask">INVOICE</th>
@@ -275,16 +384,16 @@
                             </thead>
                             <tbody>
                                 <tr>
-    
+
                                     <td>651535</td>
                                     <td>Public Adjusting Firm</td>
                                     <td>georgia.young@example.com</td>
                                     <td>24 May,2020</td>
                                     <td>Paid</td>
                                     <td>$47,800</td>
-    
-    
-    
+
+
+
                                 </tr>
                                 <tr>
                                     <td>651535</td>
